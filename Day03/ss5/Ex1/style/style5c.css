@@ -1,0 +1,27 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+    outline   : 0;
+}
+
+.display_limit {
+    width     : 500px;
+    overflow-x: hidden;
+    margin    : 8px;
+}
+.description1 {
+    padding: 15px 0;
+    text-align: justify;
+}
+.description1:first-letter {
+    font-size: 30px;
+    color: red;
+}
+.description2 {
+    text-align: justify;
+}
+.description2:first-line {
+    text-transform: uppercase;
+    color: blue;
+}

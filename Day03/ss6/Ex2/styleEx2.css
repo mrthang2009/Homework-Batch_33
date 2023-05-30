@@ -1,0 +1,42 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+    outline   : 0;
+}
+
+.display_limit {
+    width     : 1200px;
+    overflow-x: hidden;
+    margin    : 15px;
+}
+
+.rown {
+    display: flex;
+    border : 1px solid black;
+    padding: 10px 0 10px 10px;
+}
+
+.colum {
+    display     : inline-flex;
+    width       : calc(100% /3);
+    position    : static;
+    text-align  : center;
+    border-right: 1px solid black;
+    padding-left: 70px;
+}
+
+.icon {
+    font-size : 250%;
+    text-align: center;
+}
+
+.content {
+    display     : inline-block;
+    text-align  : left;
+    padding-left: 10px;
+}
+
+b {
+    text-transform: uppercase;
+}

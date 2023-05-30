@@ -1,0 +1,35 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+    outline   : 0;
+}
+
+.display_limit {
+    width     : 500px;
+    overflow-x: hidden;
+    margin    : 8px;
+}
+
+.description1 {
+    font-weight: bold;
+    padding    : 10px 0;
+}
+
+.description2 {
+    font-size: 85%;
+}
+
+.description3 {
+    padding-top: 10px;
+}
+
+img {
+    padding-top: 10px;
+}
+
+.picture p {
+    background-color: #9DA9B7;
+    padding         : 5px;
+    font-size       : 80%;
+}
