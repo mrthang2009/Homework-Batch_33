@@ -1,0 +1,45 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+    outline   : 0;
+}
+
+.display_limit {
+    width           : 900px;
+    overflow-x      : hidden;
+    margin          : 15px;
+    font-family     : Arial, Helvetica, sans-serif;
+    /* background-color: aqua; */
+}
+
+.product_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.product_list .item {
+    width: calc((100% - 60px)/4);
+    /* background-color: blueviolet; */
+    text-align: center;
+}
+.product_list .item img {
+    align-items: center;
+    display: inline-block;
+}
+.product_list .item .price p {
+    color: red;
+}
+.price {
+    display: flex;
+}
+span  {
+    padding-left: 5px;
+    text-decoration: line-through;
+}
+h4 {
+    text-align: left;
+    padding: 10px 0;
+}
+

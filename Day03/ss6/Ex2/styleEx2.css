@@ -23,9 +23,13 @@
     position    : static;
     text-align  : center;
     border-right: 1px solid black;
-    padding-left: 70px;
+    /* căn nội dung giữa thẻ div */
+    justify-content: center;
 }
-
+.colum:last-child {    
+    /* cột cuối cùng */
+    border: none;
+}
 .icon {
     font-size : 250%;
     text-align: center;

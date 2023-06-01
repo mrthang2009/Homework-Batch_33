@@ -1,0 +1,92 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+    outline   : 0;
+}
+
+.display_limit {
+    width           : 1000px;
+    overflow-x      : hidden;
+    margin          : 15px;
+    font-family     : Arial, Helvetica, sans-serif;
+    /* background-color: aqua; */
+}
+
+.title h3 {
+    text-transform: uppercase;
+    display       : inline-block;
+}
+
+.title p {
+    float: right;
+    font-weight: bold;
+}
+
+.product_list {
+    display        : flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin         : 15px 0;
+}
+
+.item {
+    width           : calc((100% - 60px)/4);
+    position: relative;
+    /* background-color: bisque; */
+}
+.image {
+    position: relative;
+}
+.image img {
+    width        : 100%;
+    height       : auto;
+    position: relative;
+}
+.label {
+    flex-direction: column;
+    display: flex;
+}
+.product_list .item .label_hot {
+    text-transform: uppercase;
+    background-color:limegreen;
+    line-height: 20px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    
+}
+.product_list .item .label_discount {
+    text-transform: uppercase;
+    background-color:brown;
+    color: white;
+    width: 50px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+.product_list .item .type {
+   padding: 10px 0 5px 0;
+   text-transform: uppercase;
+}
+.product_list .item .name {
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+.product_list .item .vote {
+    display: flex;
+    padding: 5px 0;
+}
+.product_list .item .price {
+    padding: 5px 0;
+}
