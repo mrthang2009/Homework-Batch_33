@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+    outline   : 0;
+}
+.container {
+    width : 900px;
+    margin: 15px;
+    line-height: 1.4;
+    font-size  : 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+    display: flex;
+}
+.photo {
+    width: 50%;
+}
+.photo img {
+    width: 100%;
+    height: auto;
+}
+.descriptions {
+    width: 50%;
+    line-height: 2.5;
+}
+.price {
+    display: flex;
+    vertical-align: bottom;
+    align-items: baseline;
+    margin: 10px auto;
+}
+.price h2{
+    color: orangered;
+    margin-right: 20px;
+}
+.price p {
+    text-decoration-line: line-through;
+    color: darkgrey;
+}
+.color_product {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+.color_product p {
+    margin-right: 10px;
+}
+table tr td {
+    border: 1px solid darkgrey;
+    padding: 5px 5px;
+}
+.support {
+    display: flex;
+    align-items: center;
+    line-height: 2.5;
+    margin: 10px auto;
+}
+.support i {
+    color: blue;
+}
+.support p {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+button {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    outline: 0;
+    width: 45%;
+    border-radius: 5px;
+}
+button p {
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+.btn {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.cart {
+    background-color: orangered;
+    align-items: center;
+}
+.call{
+    background-color: green;
+}
