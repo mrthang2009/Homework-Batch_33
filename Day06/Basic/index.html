@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h2>Task 1</h2>
+    <script>
+        let username = prompt("Enter your name:");
+        let password = prompt("Enter password:");
+        document.write("Tên của bạn là:" + username + "<br>");
+        document.write("Mật khẩu của bạn là:" + password + "<br>");
+        console.log("Tên của bạn là:", username);
+        console.log("Mật khẩu của bạn là:", password);
+    </script> -->
+
+    <!-- <h2>Task2</h2>
+    <script>
+        let a = prompt('Nhập vào giá trị của a');
+        let b = prompt('Nhập vào giá trị của b');
+        let x = parseInt(a) + parseInt(b);
+        let y = parseInt(a) - parseInt(b);
+        document.write("Giá trị của a là:" + parseInt(a) + "<br>");
+        document.write("Giá trị của b là:" + parseInt(b) + "<br>");
+        document.write("Tổng hai số a và b là:" + x + "<br>");
+        document.write("Hiệu hai số a và b là:" + y + "<br>");
+        console.log("Giá trị của a là:", a);
+        console.log("Giá trị của b là:", b);
+        console.log("Tổng hai số a và b là:", x);
+        console.log("Hiệu hai số a và b là:", y);
+    </script> -->
+
+    <!-- <h2>Task3</h2>
+    <button onclick="showMessage()">Delete</button>
+    <script>
+        function showMessage(){
+            let confirmResult = confirm("Bạn có chắc chắn muốn xóa record này không?");
+            if (confirmResult === true) {
+                console.log("Bạn đã xóa record");
+                document.write("Bạn đã xóa record");
+            } else {
+                console.log("Bạn đã hủy");
+                document.write("Bạn đã hủy");
+            }
+        }
+    </script> -->
+
+    <!-- <h2>Task4</h2>
+    <div class="square" onmouseover = "showMassage()">Hãy rê chuột lên tôi</div>
+    <script>
+        function showMassage(){
+            console.log("Bạn đã rê chuột vào tôi");
+        }
+    </script> -->
+    
+    <!-- <h2>Task5</h2>
+    <script>
+        let getInput = prompt("Nhập vào giá trị của biến getInput");
+        if (Number.isFinite(getInput)) {
+            console.log("getInput là số");
+        } else {
+            console.log("getInput không phải là số")}
+    </script> -->
+
+    <!-- <h2>Task6</h2>
+    <button onclick="tb()">Thêm vào giỏ hàng</button>
+    <script>
+        function tb(){
+            alert("Bạn đã thêm vào giỏ hàng thành công !")
+        }
+    </script> -->
+
+    <h2>Task7</h2>
+    <input type="text" id ="myInput">
+    <script>
+        let input = document.getElementById("myInput");
+        input.onkeypress = function (event) {
+            console.log("onkeypress: " + event.key);
+        };
+        input.onkeyup = function (event) {
+            console.log("onkeyup: " + event.key);
+        };
+        input.onkeydown = function (event) {
+            console.log("onkeydown: " + event.key);
+        };
+    </script>
+    
+</body>
+</html>
