@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+    outline   : 0;
+}
+
+.container {
+    width           : 900px;
+    margin          : 15px;
+    line-height     : 1.4;
+    font-size       : 16px;
+    font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin          : 15px;
+    background-color: #F7F7F7;
+    text-align      : center;
+    align-items     : center;
+}
+
+.title table {
+    border-collapse: collapse;
+
+}
+
+.title table tr,
+td {
+    border: 2px solid black;
+}

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT2</title>
+</head>
+<body>
+    <!-- <h2>Task 1: Render danh sách</h2>
+    <script>
+        const cars = ['Toyota', 'Honda', 'Kia', 'BMW', 'Audi', 'Mitsubishi'];
+        let list = '<ul>';
+            for (i in cars) {
+                list += `<li>${cars[i]}</li>`;   
+            }
+        list += '</ul>';
+        document.write(list);
+    </script> -->
+
+    <h2>Task 2: Bill tính tiền</h2>
+    <script>
+        myArray = [
+            {product: 'Áo bull', size: 'M', quantity: 2, unit_price: 160000},
+            {product: 'Áo khoác gió NorthFace', size: 'L', quantity: 1, unit_price: 600000},
+            {product: 'Quần Jean Nam', size: 30, quantity: 1, unit_price: 350000}
+        ];
+        
+        let Table = '<table>';
+            Table += `<tr><th>Product</th><th>Size</th><th>Quantity</th><th>Unit Price</th><th>Thành tiền</th></tr>`;
+            for (row in myArray){
+                Table += `<tr><td>${myArray[row].product}</td><td>${myArray[row].size}</td><td>${myArray[row].quantity}</td><td>${myArray[row].unit_price}</td><td>${myArray[row].unit_price*myArray[row].quantity}</td></tr>`;
+            }
+            Table += `<tr><th colspan="4">Total</th><td>${myArray[row].unit_price*myArray[row].quantity}</td></tr>`
+        Table += '</table>';
+        document.write(Table);
+        
+        
+
+
+    </script>
+</body>
+</html>

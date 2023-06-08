@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2>Task 1</h2>
+    <script>
+        let diemTrungBinh = parseFloat(prompt("Nhập điểm trung bình của học sinh:"));
+        if (diemTrungBinh >= 9.0) {
+            console.log("XUẤT SẮC");
+        } else if (diemTrungBinh >= 8 && diemTrungBinh < 9.0) {
+            console.log("GIỎI");
+        } else if (diemTrungBinh >= 6.5 && diemTrungBinh < 8.0) {
+            console.log("KHÁ");
+        } else if (diemTrungBinh >= 5.0 && diemTrungBinh < 6.5) {
+            console.log("TRUNG BÌNH");
+        } else {
+            console.log("YẾU");
+        }
+    </script> -->
+
+    <!-- <h2>Task 2</h2>
+    <script>
+        let Sochudien = parseInt(prompt("Nhập vào số chữ điện đã tiêu thụ:"));
+        if (Sochudien <= 100) {
+            console.log(`Số tiền phải trả là: `, Sochudien*550);
+        } else if (Sochudien >100 && Sochudien <= 150) {
+            console.log(`Số tiền phải trả là: `, 100*550 + (Sochudien-100)*900);
+        } else if (Sochudien >150 && Sochudien <= 200) {
+            console.log(`Số tiền phải trả là: `, 100*550 + 50*900 + (Sochudien-150)*1210);
+        } else if (Sochudien >200 && Sochudien <=300) {
+            console.log(`Số tiền phải trả là: `, 100*550 + 50*900 + 50*1210 +(Sochudien-200)*1340);
+        } else if (Sochudien >300) {
+            console.log(`Số tiền phải trả là: `, 100*550 + 50*900 + 50*1210 + 100*1340 + (Sochudien-300)*1400);
+        }
+    </script> -->
+
+    <!-- <h2>Task 3</h2>
+    <script>
+        let month = parseInt(prompt("Nhap vao mot thang trong nam: "));
+        if (month >= 1 && month <= 3) {   //Cách if-else if
+            console.log("Mùa Xuân");
+        } else if (month >= 4 && month <= 6) {
+            console.log("Mùa Hạ");
+        } else if (month >= 7 && month <= 9) {
+            console.log("Mùa Thu");
+        } else if (month >= 10 && month <= 12) {
+            console.log("Mùa Đông");;
+        } else {
+            console.log("Không hợp lệ");
+        }   
+    </script> -->
+
+    <!-- <h2>Task 4</h2>
+    <script>
+        let row = "";
+        let i = 1;
+        // console.log(row);
+        for (i; i <= 6 ; i++) { 
+            row = row + "*";
+            console.log(row); 
+        }
+        // for (let i = 6; i > 0; i--) {
+        // let row = "";
+        // for (let j = 0; j < i; j++) {
+        // row += "* ";
+        // }
+        // console.log(row);
+        // }
+    </script> -->
+
+    <!-- <h2>Task 5</h2>
+    <script>
+        for (let i=2; i<=9; i++){
+            document.write(`Bảng cửu chương ${i}:` + "<br>");
+        for (let j=1; j<=10; j++){
+            document.write(`${i} x ${j} = ${i*j}` + "<br>");
+        }}
+    </script> -->
+
+    <h2>Task 6</h2>
+    <script>
+        var TKG = 1000000;
+        let option = prompt("Vui lòng chọn chức năng:" + "<br>" + "An N: De nop tien" + "<br>" + "An R: De rut tien" + "<br>" + "An X: De xem so du");
+        switch (option) {
+            case 'X':
+                console.log("Bạn đã chọn chức năng xem số dư");
+                console.log("Số dư của bạn là: ", TKG);
+                break;
+            case 'R':
+                console.log("Bạn đã chọn chức năng rút tiền");
+                OUT = parseInt(prompt('Nhập vào số tiền cần rút')); 
+                if (OUT % 50000 == 0){
+                    if (OUT <= TKG) {
+                        console.log('Mời nhận tiền')
+                        TKG = TKG - OUT;
+                        console.log('Số dư của bạn là: ', TKG);
+                    } else {
+                    console.log('Tài khoản quý khách không đủ');
+                    }
+                } else {
+                    console.log('Số tiền bạn nhập phải là bội số của 50000');
+                }
+                break;
+            case 'N':
+                console.log("Bạn đã chọn chức năng nạp tiền");
+                let IN = parseInt(prompt('Nhập vào số tiền cần nạp'));
+                TKG = IN + TKG;
+                console.log("Số dư của bạn là: ", TKG);
+                break;
+                    
+        }
+    </script>
+</body>
+</html>
