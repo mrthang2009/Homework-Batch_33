@@ -1,0 +1,18 @@
+table {
+    text-align: left;
+    line-height: 2;
+    margin: 15px;
+    border-collapse: collapse;
+}
+td,th {
+    width: 100px;
+}
+td, th:first-child {
+    width: 30px;
+}
+tr , td, th {
+    border-bottom: 1px solid black;
+}
+tr:nth-child(2n+2) {
+    background-color: aliceblue;
+}
