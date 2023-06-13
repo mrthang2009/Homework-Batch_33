@@ -174,13 +174,12 @@ footer {
     margin-right: 20px;
 }
 
-.has-child.active::before {
-    transform: rotate(225deg);
-    top: 23px
-}
 .has-child {
     position: relative;
 
+}
+.has-child:hover .nav-child {
+    display: block;
 }
 .has-child::before {
     border-bottom: 2px solid #333;
@@ -198,7 +197,7 @@ footer {
 .nav-child {
     position: absolute;
     top: 50px;
-    /* display: none; */
+    display: none;
     left: 0px;
     z-index: 9999;
     background-color: #fff;
@@ -219,7 +218,6 @@ footer {
     align-items    : center;
     border-right   : 1px solid #e7e7e7;
     display        : flex;
-    align-items    : center;
     justify-content: center;
     width          : 30%;
 }
