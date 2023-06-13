@@ -1,0 +1,22 @@
+table {
+    width: 1200px;
+    border-collapse: collapse;
+}
+thead {
+    background-color: #D3ECFF;
+}
+table tr,td, th {
+    border: 1px solid #000;
+}
+tbody th {
+    background-color: #D3ECFF;
+}
+tbody tr:first-child {
+    background-color: #FFFFFF;
+}
+tbody tr:nth-child(2) {
+    background-color: #E9F2E0;
+}
+tbody tr:nth-child(3) {
+    background-color: #DFDFDF;
+}

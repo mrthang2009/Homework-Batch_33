@@ -4,6 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BT2</title>
+    <style>
+        table {
+            text-align: center;
+        }
+        table td:last-child{
+            text-align: right;
+        }
+        table td:first-child{
+            width: 200px;
+            text-align: left;
+        }
+        table th, td {
+            width: 100px;
+        }
+
+    </style>
 </head>
 <body>
     <!-- <h2>Task 1: Render danh sách</h2>
@@ -26,17 +42,15 @@
         ];
         
         let Table = '<table>';
-            Table += `<tr><th>Product</th><th>Size</th><th>Quantity</th><th>Unit Price</th><th>Thành tiền</th></tr>`;
-            for (row in myArray){
-                Table += `<tr><td>${myArray[row].product}</td><td>${myArray[row].size}</td><td>${myArray[row].quantity}</td><td>${myArray[row].unit_price}</td><td>${myArray[row].unit_price*myArray[row].quantity}</td></tr>`;
-            }
-            Table += `<tr><th colspan="4">Total</th><td>${myArray[row].unit_price*myArray[row].quantity}</td></tr>`
+        let sum = 0;
+            Table += `<tr><th>Product</th><th>Size</th><th>Quantity</th><th>Unit Price</th><th>Amount</th></tr>`;
+        for (row in myArray){
+            Table += `<tr><td>${myArray[row].product}</td><td>${myArray[row].size}</td><td>${myArray[row].quantity}</td><td>${myArray[row].unit_price}</td><td>${myArray[row].unit_price*myArray[row].quantity}</td></tr>`;
+            sum += (myArray[row].unit_price) * (myArray[row].quantity);
+        } 
+            Table += `<tr><th colspan="4">Total</th><td>${sum}</td></tr>`
         Table += '</table>';
         document.write(Table);
-        
-        
-
-
     </script>
 </body>
 </html>

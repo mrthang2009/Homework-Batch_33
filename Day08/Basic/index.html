@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-day8</title>
+    <style>
+        .input_row {
+            display: flex;
+            padding: 5px;
+        }
+        .input_row label {
+            min-width: 100px;
+        }
+        table td:last-child{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task 1</h2>
+    <div class="input_row">
+        <label for="quanlity">Số lượng</label>
+        <input type="number" id="quanlity" name="quanlity" value="1" onchange="change()" />
+    </div>
+    <div class="input_row">
+        <label for="price">Đơn giá</label>
+        <input type="number" id="price" name="price" value="0" onchange="change()" />
+    </div>
+    <button onclick="increaseFuntion()" id="add" type='button'> + </button>
+    <button onclick="descreaseFuntion()" id="sub" type='button'> - </button>
+    <div>Tổng giá tiền<span id="total" style="color: red;"></span></div>
+    <script>
+        function change () {
+            let quanlity = document.getElementById('quanlity').value;
+            let price = document.getElementById('price').value;
+            let total = quanlity * price;
+            document.write(total);
+        }
+        function increaseFuntion() {
+            quanlity++;
+        }
+        function descreaseFuntion() {
+            quanlity--;
+        }
+    </script>
+    <!-- <h2>Task 2</h2>
+    <script>
+        const users = [
+            { id: 1, name: 'iPhone 12 Pro Max', price: 250000000, quanlity: 1 },
+            { id: 2, name: 'Samsung Galaxy S21', price: 32000000, quanlity: 1 },
+            { id: 3, name: 'Xiaomi Note 11', price: 18000000, quanlity: 2 },
+            { id: 4, name: 'Galaxy Ford Pro', price: 47000000, quanlity: 1 },
+            { id: 5, name: 'OPPO Find N2 Flip 5G', price: 19990000, quanlity: 3 }
+            ];
+        let Table = '<table>';
+        let sum = 0;
+        Table += `<tr><th>ID</th><th>Name</th><th>Price</th><th>Quanlity</th><th>Amount</th></tr>`;
+        for (row in users){
+            Table += `<tr><td>${users[row].id}</td><td>${users[row].name}</td><td>${users[row].price}</td><td>${users[row].quanlity}</td><td>${users[row].price*users[row].quanlity}</td></tr>`;
+            sum = sum + users[row].price*users[row].quanlity;
+        }
+        Table += `<tr><th colspan="4">Total</th><td>${sum}</td></tr>`
+        Table += '</table>';
+        document.write(Table);
+    </script> -->
+
+    <!-- <h2>Task 3</h2>
+        <ul id ="list">
+            <li class="child_one">Child 1</li>
+            <li class="child_two">
+                <img src="images/photo.png" alt="photo" />
+            </li>
+            <li class="child_three"><a href="link3">Child 3</a></li>
+        </ul> -->
+</body>
+</html>
